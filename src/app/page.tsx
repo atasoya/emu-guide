@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Menu, Search } from 'lucide-react'
+import { Menu, } from 'lucide-react'
 
 export default function Component() {
   const categories = [
