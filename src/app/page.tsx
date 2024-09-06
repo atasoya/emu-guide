@@ -5,7 +5,7 @@ export default function Component() {
   const categories = [
     "News", "Cafes", "Restaurants", "P/P Foods", "Dormitories",
     "Homes", "Events", "Clubs", "Entertainment", "Departments",
-    "Scholarships", "Transportation", "Private Classes", "For Sale", "Ask Questions",
+    "Scholarships", "Transportation", "Private Classes", "For Sale", "Communities",
     "I am New", "Placement Scores", "Stationery",
     "Discounts", "Market", "Jobs", "Stores"
   ]
@@ -36,7 +36,7 @@ export default function Component() {
                   Welcome to emu.tips
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Your comprehensive guide to Emu University
+                  Your comprehensive guide to Emu
                 </p>
               </div>
             </div>
