@@ -42,29 +42,32 @@ export default function Component() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container mx-auto max-w-screen-lg flex h-14 items-center justify-between">
-          <Link className="mr-6 ml-3 md:ml-0 flex items-center space-x-2" href="/">
-            <span className="font-bold text-xl">emu.tips</span>
+      {/* Header */}
+      <header className="sticky top-0 z-50 w-full bg-white shadow-md">
+        <div className="container mx-auto flex h-16 items-center justify-between px-4">
+          <Link href="/" className="text-xl font-bold text-gray-800 hover:underline">
+            emu.tips
           </Link>
           <div className="flex items-center space-x-4">
             <button
               onClick={toggleLanguage}
-              className="flex items-center justify-center rounded-md p-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring hover:bg-accent hover:text-accent-foreground"
+              className="flex items-center space-x-2 rounded-lg p-2 text-gray-600 hover:bg-gray-100 hover:text-blue-600"
               aria-label={language === 'en' ? 'Switch to Turkish' : 'İngilizce\'ye geç'}
             >
-              <Globe className="h-5 w-5" />
-              <span className="ml-2">{language === 'en' ? 'TR' : 'EN'}</span>
+              <Globe className="h-6 w-6" />
+              <span>{language === 'en' ? 'TR' : 'EN'}</span>
             </button>
-            <button className="md:hidden inline-flex items-center justify-center whitespace-nowrap rounded-md p-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring hover:bg-accent hover:text-accent-foreground">
-              <Menu className="h-5 w-5" />
-              <span className="sr-only">Toggle menu</span>
+            <button className="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-blue-600">
+              <Menu className="h-6 w-6" />
             </button>
           </div>
         </div>
       </header>
+
+      {/* Main Content */}
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+        {/* Welcome Section */}
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gray-50">
           <div className="container mx-auto max-w-screen-lg px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
@@ -78,16 +81,18 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
+
+        {/* Categories Section */}
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
           <div className="container mx-auto max-w-screen-lg px-4 md:px-6">
             <h2 className="text-2xl font-bold mb-4">
               {language === 'en' ? 'Categories' : 'Kategoriler'}
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
               {categories[language].map((category, index) => (
                 <Link
                   key={index}
-                  className="flex items-center justify-center p-4 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
+                  className="p-4 text-center rounded-lg bg-white shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1"
                   href={`/${replaceTurkishChars(category.toLowerCase().replace(/\s+/g, '-'))}`}
                 >
                   {category}
@@ -97,16 +102,20 @@ export default function Component() {
           </div>
         </section>
       </main>
-      <footer className="container mx-auto max-w-screen-lg flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 emu.tips. All rights reserved.</p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            {language === 'en' ? 'Official Website' : 'Resmi Web Sitesi'}
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            {language === 'en' ? 'Partner With Us' : 'Bizimle Çalışın'}
-          </Link>
-        </nav>
+
+      {/* Footer */}
+      <footer className="bg-gray-100 border-t py-4 mt-8">
+        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
+          <p className="text-sm text-gray-500">© 2024 emu.tips. All rights reserved.</p>
+          <nav className="flex space-x-4 text-sm">
+            <Link href="#" className="text-gray-600 hover:text-blue-600">
+              {language === 'en' ? 'Official Website' : 'Resmi Web Sitesi'}
+            </Link>
+            <Link href="#" className="text-gray-600 hover:text-blue-600">
+              {language === 'en' ? 'Partner With Us' : 'Bizimle Çalışın'}
+            </Link>
+          </nav>
+        </div>
       </footer>
     </div>
   );
