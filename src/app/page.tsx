@@ -24,15 +24,15 @@ export default function Component() {
       "News", "Cafes", "Restaurants", "PP Foods", "Dormitories",
       "Events", "Clubs", "Entertainment", "Faculties",
       "Scholarships", "Transportation", "Private Classes", "For Sale", "Communities",
-      "I am New", "Placement Scores", "Stationery",
-      "Discounts", "Markets", "Jobs", "Stores", "Guides"
+      "I am New","Stationery",
+      "Discounts", "Markets", "Stores", "Guides"
     ],
     tr: [
       "Haberler", "Kafeler", "Restoranlar", "FP Yemekler", "Yurtlar",
       "Etkinlikler", "Kulüpler", "Eğlence", "Fakülteler",
       "Burslar", "Ulaşım", "Özel Dersler", "Satılık", "Topluluklar",
-      "Yeni Geldim", "Yerleştirme Puanları", "Kırtasiye",
-      "İndirimler", "Marketler", "İş İlanları", "Mağazalar", "Rehberler"
+      "Yeni Geldim","Kırtasiye",
+      "İndirimler", "Marketler", "Mağazalar", "Rehberler"
     ]
   };
 
