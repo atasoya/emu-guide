@@ -1,10 +1,23 @@
 "use client";
-import { useState } from 'react'
-import Link from 'next/link'
-import { Menu, Globe } from 'lucide-react'
+import { useState } from 'react';
+import Link from 'next/link';
+import { Menu, Globe } from 'lucide-react';
+
+// Utility function to replace Turkish characters with English equivalents
+const replaceTurkishChars = (text: string) => {
+  const map: { [key: string]: string } = {
+    'ç': 'c', 'Ç': 'C',
+    'ğ': 'g', 'Ğ': 'G',
+    'ı': 'i', 'İ': 'I',
+    'ö': 'o', 'Ö': 'O',
+    'ş': 's', 'Ş': 'S',
+    'ü': 'u', 'Ü': 'U'
+  };
+  return text.replace(/[çğışüöÇĞİŞÜÖ]/g, char => map[char] || char);
+}
 
 export default function Component() {
-  const [language, setLanguage] = useState<'en' | 'tr'>('en')
+  const [language, setLanguage] = useState<'en' | 'tr'>('en');
 
   const categories = {
     en: [
@@ -21,11 +34,11 @@ export default function Component() {
       "Yeni Geldim", "Yerleştirme Puanları", "Kırtasiye",
       "İndirimler", "Marketler", "İş İlanları", "Mağazalar", "Rehberler"
     ]
-  }
+  };
 
   const toggleLanguage = () => {
-    setLanguage(prev => prev === 'en' ? 'tr' : 'en')
-  }
+    setLanguage(prev => prev === 'en' ? 'tr' : 'en');
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -75,7 +88,7 @@ export default function Component() {
                 <Link
                   key={index}
                   className="flex items-center justify-center p-4 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                  href={`/${category.toLowerCase().replace(/\s+/g, '-')}`}
+                  href={`/${replaceTurkishChars(category.toLowerCase().replace(/\s+/g, '-'))}`}
                 >
                   {category}
                 </Link>
@@ -96,5 +109,5 @@ export default function Component() {
         </nav>
       </footer>
     </div>
-  )
+  );
 }
