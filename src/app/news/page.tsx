@@ -12,47 +12,37 @@ interface NewsItem {
 const newsItems: NewsItem[] = [
   {
     id: 1,
-    title: "EMU Announces New Scholarship Program",
-    content: "Eastern Mediterranean University has announced a new scholarship program for international students. The program aims to attract top talent from around the world and promote diversity on campus.",
-    date: "2024-03-15",
-    followUpLink: "/scholarships/new-program"
+    title: "Orientation Days",
+    content: "Details on the Orientation Days, organised for new students who have just started their university lives and joined the EMU Family, can be accessed via our internet page. You can also obtain all types of university-related information from the information desks set up on our campus.",
+    date: "2024-09-7",
+    followUpLink: "https://orientation.emu.edu.tr/DefaultEng.aspx"
   },
-  {
-    id: 2,
-    title: "Campus Cafeteria Introduces New Vegan Options",
-    content: "In response to growing demand, the main campus cafeteria has expanded its menu to include a variety of vegan options. Students can now enjoy plant-based meals every day of the week.",
-    date: "2024-03-10",
-    followUpLink: "/cafeteria/vegan-menu"
-  },
-  {
-    id: 3,
-    title: "EMU Researchers Make Breakthrough in Renewable Energy",
-    content: "A team of researchers from the EMU Engineering Department has made a significant breakthrough in solar energy efficiency. Their findings could lead to more affordable and effective solar panels.",
-    date: "2024-03-05",
-    followUpLink: "/research/solar-breakthrough"
-  }
 ]
 
 export default function page() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <Link href="/" className="inline-flex items-center mb-6 text-blue-600 hover:text-blue-800">
+      <Link href="/" className="inline-flex items-center mb-6 text-blue-600 hover:text-blue-800 transition-colors duration-300">
         <ArrowLeft className="w-4 h-4 mr-2" />
         Back to Home
       </Link>
-      <h1 className="text-3xl font-bold mb-6">EMU News</h1>
+      
+      <h1 className="text-4xl font-bold text-gray-900 mb-6">EMU News</h1>
+      
       <div className="space-y-8">
         {newsItems.map((item) => (
-          <div key={item.id} className="bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-xl font-semibold mb-2">{item.title}</h2>
-            <p className="text-gray-600 mb-4 flex items-center">
-              <Calendar className="w-4 h-4 mr-2" />
-              {new Date(item.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+          <div key={item.id} className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-200">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-2">{item.title}</h2>
+            <p className="text-gray-500 mb-4 flex items-center">
+              <Calendar className="w-5 h-5 mr-2 text-gray-400" />
+              <span className="text-gray-600">
+                {new Date(item.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </span>
             </p>
-            <p className="text-gray-700 mb-4">{item.content}</p>
+            <p className="text-gray-700 mb-6 leading-relaxed">{item.content}</p>
             <Link 
               href={item.followUpLink}
-              className="inline-flex items-center text-blue-600 hover:text-blue-800"
+              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-300"
             >
               Read more
               <ArrowRight className="w-4 h-4 ml-2" />
