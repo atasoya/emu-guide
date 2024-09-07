@@ -10,15 +10,15 @@ const reasons = [
   "Report an Issue",
   "Suggestion",
   "Sale Item",
-  "Private Class "
+  "Private Class"
 ]
 
 export default function ContactPage() {
   const [isSubmitted, setIsSubmitted] = useState(false)
 
-  const handleSubmit = async (event: { preventDefault: () => void; target: any }) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    const form = event.target
+    const form = event.target as HTMLFormElement
     const formData = new FormData(form)
 
     try {
