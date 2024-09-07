@@ -9,7 +9,8 @@ const reasons = [
   "Feedback",
   "Report an Issue",
   "Suggestion",
-  "Other"
+  "Sale Item",
+  "Private Class "
 ]
 
 export default function ContactPage() {
