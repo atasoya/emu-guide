@@ -36,7 +36,7 @@ export default function page() {
         <ArrowLeft className="w-4 h-4 mr-2" />
         Anasayfaya Geri Dön
       </Link>
-      <h1 className="text-3xl font-bold mb-6">DAÜ'ye Yeni Geldim</h1>
+      <h1 className="text-3xl font-bold mb-6">DAÜ&apos;ye Yeni Geldim</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {newContents.map((content) => (
           <div key={content.id} className="bg-white rounded-lg shadow-md p-6">
