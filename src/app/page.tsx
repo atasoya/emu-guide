@@ -22,14 +22,14 @@ export default function Component() {
   const categories = {
     en: [
       "News", "Cafes", "Restaurants", "PP Foods", "Dormitories",
-      "Events", "Clubs", "Entertainment", "Departments",
+      "Events", "Clubs", "Entertainment", "Faculties",
       "Scholarships", "Transportation", "Private Classes", "For Sale", "Communities",
       "I am New", "Placement Scores", "Stationery",
       "Discounts", "Markets", "Jobs", "Stores", "Guides"
     ],
     tr: [
       "Haberler", "Kafeler", "Restoranlar", "FP Yemekler", "Yurtlar",
-      "Etkinlikler", "Kulüpler", "Eğlence", "Bölümler",
+      "Etkinlikler", "Kulüpler", "Eğlence", "Fakülteler",
       "Burslar", "Ulaşım", "Özel Dersler", "Satılık", "Topluluklar",
       "Yeni Geldim", "Yerleştirme Puanları", "Kırtasiye",
       "İndirimler", "Marketler", "İş İlanları", "Mağazalar", "Rehberler"
