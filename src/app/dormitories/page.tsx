@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { ArrowLeft, MapPin, Banknote, ExternalLink, Home, MessageSquare } from 'lucide-react'
 
-interface Dormitory {
+/* interface Dormitory {
   id: number
   name: string
   place: string
@@ -10,7 +10,7 @@ interface Dormitory {
   officialPageUrl: string
   facilities: string[]
   comments: string[]
-}
+} */
 
 const dormitories = [
   {
