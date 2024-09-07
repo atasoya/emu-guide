@@ -74,6 +74,16 @@ const cafes: Cafe[] = [
     comments: ["Popüler mekan", "Merkezi konum", "Klima mevcut"]
   },
   {
+    name: "The King of Chicken Burger",
+    location: "Kampüs Girişi",
+    googleMapsUrl: "https://maps.app.goo.gl/N2dUbD1uKRyDQBL48",
+    openTime: "11:30",
+    closeTime: "10:00",
+    studyScore: 6,
+    priceRange: "$$",
+    comments: ["Büyük porsiyonlar", "Yavaş servis", "Gruplar için ideal"] 
+  },
+  {
     name: "Sandras Cafe",
     location: "Merkez Derslik",
     googleMapsUrl: "https://maps.app.goo.gl/JAiuxVeezR5YWNS7A",

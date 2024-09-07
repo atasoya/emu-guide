@@ -64,6 +64,16 @@ const cafes: Cafe[] = [
     comments: ["Always has space", "Offers food & market", "Central location"] 
   },
   {
+    name: "The King of Chicken Burger",
+    location: "Campus Enterance",
+    googleMapsUrl: "https://maps.app.goo.gl/N2dUbD1uKRyDQBL48",
+    openTime: "11:30",
+    closeTime: "10:00",
+    studyScore: 6,
+    priceRange: "$$",
+    comments: ["Large portions", "Slow delivery times", "Great for groups"] 
+  },
+  {
     name: "Tabledot Restaurant",
     location: "Eastern Mediterranean University",
     googleMapsUrl: "https://maps.app.goo.gl/obRKJpGnz2gSFg1B7",
