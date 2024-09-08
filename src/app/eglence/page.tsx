@@ -154,7 +154,7 @@ export default function EntertainmentPage() {
         <ArrowLeft className="w-4 h-4 mr-2" />
         Ana Sayfaya Dön
       </Link>
-      <h1 className="text-3xl font-bold mb-6 text-gray-800">EMU'da Eğlence</h1>
+      <h1 className="text-3xl font-bold mb-6 text-gray-800">DAÜ&apos;de Eğlence</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {entertainments.map((ent) => (
           <div key={ent.id} className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
