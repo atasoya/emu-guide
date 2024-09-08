@@ -14,35 +14,205 @@ interface Cafe {
 
 const cafes: Cafe[] = [
   {
-    name: "Brew & Study",
+    name: "Yemen Coffee EMU",
     location: "EMU Campus Center",
-    googleMapsUrl: "https://goo.gl/maps/example1",
+    googleMapsUrl: "https://maps.app.goo.gl/VutBQQyHeAmScayw7?g_st=com.google.maps.preview.copy",
+    openTime: "08:00",
+    closeTime: "01:00",
+    studyScore: 7,
+    priceRange: "$$$",
+    comments: ["Good ambience", "Lovely staff", "Location is good"]
+  },
+  {
+    name: "Jojo Cafe",
+    location: "Computer Engineering Department",
+    googleMapsUrl: "https://maps.app.goo.gl/jm81siDu6TrHbU5u8?g_st=com.google.maps.preview.copy",
     openTime: "07:00",
-    closeTime: "23:00",
+    closeTime: "19:00",
     studyScore: 9,
     priceRange: "$$",
-    comments: ["Great coffee!", "Quiet atmosphere", "Fast Wi-Fi"]
+    comments: ["Great service", "Lovely staff", "Fresh homemade pastries"]
   },
   {
-    name: "Seaside Sips",
-    location: "Famagusta Beach Road",
-    googleMapsUrl: "https://goo.gl/maps/example2",
+    name: "Rock Café EMU",
+    location: "IT Department",
+    googleMapsUrl: "https://maps.app.goo.gl/CyT7TQ1FCCH8fBkQ8?g_st=com.google.maps.preview.copy",
+    openTime: "08:00",
+    closeTime: "17:00",
+    studyScore: 7,
+    priceRange: "$",
+    comments: ["Great coffee", "Lovely staff", "Friendly atmosphere"]
+  },
+  {
+    name: "DAU-SEN LOCAL",
+    location: "EMU Campus Center",
+    googleMapsUrl: "https://maps.app.goo.gl/pk3EDijT6nLWjMYD7?g_st=com.google.maps.preview.copy",
+    openTime: "07:00",
+    closeTime: "21:00",
+    studyScore: 8,
+    priceRange: "$$$",
+    comments: ["Warm and sustainable place to eat and study", "Cozy vibe", "Great coffee and delicious foods"]
+  },
+  {
+    name: "Sandra’s Café",
+    location: "EMU Campus Center",
+    googleMapsUrl: "https://maps.app.goo.gl/KwBxqsKiu7wdT4Jt7?g_st=com.google.maps.preview.copy",
     openTime: "09:00",
     closeTime: "22:00",
-    studyScore: 6,
-    priceRange: "$$$",
-    comments: ["Beautiful view", "Bit noisy on weekends", "Delicious pastries"]
+    studyScore: 7,
+    priceRange: "$",
+    comments: ["Good location", "Billiards", "Lovely staff"]
   },
   {
-    name: "Quiet Corner",
-    location: "University Library",
-    googleMapsUrl: "https://goo.gl/maps/example3",
+    name: "Break Point",
+    location: "EMU Campus Center",
+    googleMapsUrl: "https://maps.app.goo.gl/JbNv8HJxNybm5DVn6?g_st=com.google.maps.preview.copy",
     openTime: "08:00",
     closeTime: "20:00",
-    studyScore: 10,
+    studyScore: 5,
     priceRange: "$",
-    comments: ["Perfect for studying", "Limited food options", "Always find a seat"]
-  }
+    comments: ["Convenient location", "Good coffee", "Friendly environment"]
+  },
+  {
+    name: "Crush",
+    location: "EMU Campus Center",
+    googleMapsUrl: "https://maps.app.goo.gl/Mjx4nVM21FigFCww7?g_st=com.google.maps.preview.copy",
+    openTime: "08:00",
+    closeTime: "20:00",
+    studyScore: 6,
+    priceRange: "$$",
+    comments: ["Good ambience", "Cozy place", "Great coffees"]
+  },
+  {
+    name: "Gloria Jean’s Coffeee Pop-Art",
+    location: "Popart Dormitory",
+    googleMapsUrl: "https://maps.google.com?ftid=0x14dfc976fbf615cb:0x44bf9d291d27dbe5&entry=gps",
+    openTime: "09:00",
+    closeTime: "23:00",
+    studyScore: 9,
+    priceRange: "$$$",
+    comments: ["Good atmosphere", "Great coffee and desserts", "Convenient location"]
+  },
+  {
+    name: "Gloria Jean’s Coffees EMU",
+    location: "Salamis Road",
+    googleMapsUrl: "https://maps.app.goo.gl/Za7QbbGAZFBfwPVMA?g_st=com.google.maps.preview.copy",
+    openTime: "07:00",
+    closeTime: "00:00",
+    studyScore: 9,
+    priceRange: "$$$",
+    comments: ["Great terrace", "Quality coffee", "Convenient location"]
+  },
+  {
+    name: "To Go Coffee Time",
+    location: "Salamis Road",
+    googleMapsUrl: "https://maps.app.goo.gl/85Zdt427DWiDhQgq5?g_st=com.google.maps.preview.copy",
+    openTime: "08:30",
+    closeTime: "23:30",
+    studyScore: 7,
+    priceRange: "$$",
+    comments: ["Calm environment", "Proper and delicious coffee", "Good location"]
+  },
+  {
+    name: "Motto Café Bistro",
+    location: "Salamis Road",
+    googleMapsUrl: "https://maps.app.goo.gl/ZLYZ1sVpcg6ekUot8?g_st=com.google.maps.preview.copy",
+    openTime: "10:00",
+    closeTime: "03:00",
+    studyScore: 4,
+    priceRange: "$$",
+    comments: ["Great accessibility and outside seating area", "Great shisha", "Good service"]
+  },
+  {
+    name: "Mackbear Coffee",
+    location: "Novel Centre Point",
+    googleMapsUrl: "https://maps.app.goo.gl/qSvJwGcjx8761Q5v7?g_st=com.google.maps.preview.copy",
+    openTime: "08:00",
+    closeTime: "01:00",
+    studyScore: 8,
+    priceRange: "$$$",
+    comments: ["Refreshing environment", "Good vibes", "Great coffee"]
+  },
+  {
+    name: "Okka Coffee",
+    location: "Salamis Road",
+    googleMapsUrl: "https://maps.app.goo.gl/LBdgRmLnE38KWA14A?g_st=com.google.maps.preview.copy",
+    openTime: "08:00",
+    closeTime: "01:00",
+    studyScore: 3,
+    priceRange: "$$",
+    comments: ["Wide range of coffee, brews and desserts", "Fast service", "Premium shisha"]
+  },
+  {
+    name: "Exile Coffee and Wine",
+    location: "Salamis Road",
+    googleMapsUrl: "https://maps.app.goo.gl/wZtMJfGzq537vVXy8?g_st=com.google.maps.preview.copy",
+    openTime: "08:30",
+    closeTime: "23:00",
+    studyScore: 5,
+    priceRange: "$$$",
+    comments: ["Great coffee, drinks and fellowship", "Cozy atmosphere", "Lovely staff"]
+  },
+  {
+    name: "Caffe Pascucci",
+    location: "Salamis Road",
+    googleMapsUrl: "https://maps.app.goo.gl/87wpiW1pC8pMuQbn9?g_st=com.google.maps.preview.copy",
+    openTime: "09:00",
+    closeTime: "23:00",
+    studyScore: 8,
+    priceRange: "$$",
+    comments: ["Fast Wi-fi", "Chill atmosphere", "Good coffee"]
+  },
+  {
+    name: "Cortado Espresso Bar",
+    location: "Salamis Road",
+    googleMapsUrl: "https://maps.app.goo.gl/BFeVvMhACR4VVbN18?g_st=com.google.maps.preview.copy",
+    openTime: "09:00",
+    closeTime: "00:00",
+    studyScore: 9,
+    priceRange: "$$$",
+    comments: ["Quick service", "Cozy atmosphere", "Beautiful garden"]
+  },
+  {
+    name: "Narin Eatery",
+    location: "Salamis Road",
+    googleMapsUrl: "https://maps.app.goo.gl/H6qucM67hn5eTEun7?g_st=com.google.maps.preview.copy",
+    openTime: "08:00",
+    closeTime: "00:00",
+    studyScore: 6,
+    priceRange: "$$",
+    comments: ["Free parking", "Quality food", "Good pastries and coffee"]
+  },
+  {
+    name: "Loof Coffee & Shopping",
+    location: "Salamis Road",
+    googleMapsUrl: "https://maps.app.goo.gl/5dnhN7viDGHpnUKv5?g_st=com.google.maps.preview.copy",
+    openTime: "8:00",
+    closeTime: "00:00",
+    studyScore: 9,
+    priceRange: "$$$",
+    comments: ["Lovely staff", "Good coffee", "Homemade pastries"]
+  },
+  {
+    name: "Coffee Corner Cakes",
+    location: "Salamis Road",
+    googleMapsUrl: "https://maps.app.goo.gl/N93U41z7nC3MBmVf9?g_st=com.google.maps.preview.copy",
+    openTime: "08:00",
+    closeTime: "00:00",
+    studyScore: 7,
+    priceRange: "$$$",
+    comments: ["Lovely staff", "Good coffee", "Meeting room available"]
+  },
+  {
+    name: "MOC Ingate",
+    location: "Ingate Hotel",
+    googleMapsUrl: "https://maps.app.goo.gl/N93U41z7nC3MBmVf9?g_st=com.google.maps.preview.copy",
+    openTime: "08:00",
+    closeTime: "00:00",
+    studyScore: 10,
+    priceRange: "$$$",
+    comments: ["Lovely staff", "Good coffee", "Friendly staff"]
+  },
 ]
 
 export default function page() {
