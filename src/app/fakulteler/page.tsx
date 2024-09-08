@@ -11,99 +11,100 @@ interface Department {
 const departments: Department[] = [
   {
     id: 1,
-    name: "Architecture",
-    description: "Focuses on architectural design, urban planning, and sustainable building practices.",
+    name: "Mimarlık",
+    description: "Mimari tasarım, kentsel planlama ve sürdürülebilir bina uygulamaları üzerine odaklanır.",
     officialPageUrl: "https://arch.emu.edu.tr"
   },
   {
     id: 2,
-    name: "Arts & Sciences",
-    description: "Offers a wide range of programs in natural sciences, social sciences, and humanities.",
+    name: "Fen ve Edebiyat",
+    description: "Doğa bilimleri, sosyal bilimler ve beşeri bilimlerde geniş bir program yelpazesi sunar.",
     officialPageUrl: "https://fas.emu.edu.tr"
   },
   {
     id: 3,
-    name: "Business & Economics",
-    description: "Provides education in various business disciplines, economics, and management.",
+    name: "İşletme ve Ekonomi",
+    description: "Çeşitli iş disiplinlerinde, ekonomi ve yönetimde eğitim sunar.",
     officialPageUrl: "https://be.emu.edu.tr"
   },
   {
     id: 4,
-    name: "Communication and Media Studies",
-    description: "Covers areas such as journalism, public relations, and digital media.",
+    name: "İletişim ve Medya Çalışmaları",
+    description: "Gazetecilik, halkla ilişkiler ve dijital medya gibi alanları kapsar.",
     officialPageUrl: "https://fcms.emu.edu.tr"
   },
   {
     id: 5,
-    name: "Dentistry",
-    description: "Offers comprehensive education in dental sciences and clinical practice.",
+    name: "Diş Hekimliği",
+    description: "Diş hekimliği bilimleri ve klinik uygulamalarda kapsamlı eğitim sunar.",
     officialPageUrl: "https://dent.emu.edu.tr"
   },
   {
     id: 6,
-    name: "Education",
-    description: "Prepares future educators with modern teaching methodologies and practices.",
+    name: "Eğitim",
+    description: "Gelecek öğretmenleri modern öğretim metodolojileri ve uygulamaları ile hazırlar.",
     officialPageUrl: "https://educ.emu.edu.tr"
   },
   {
     id: 7,
-    name: "Engineering",
-    description: "Covers various engineering disciplines including civil, electrical, and mechanical engineering.",
+    name: "Mühendislik",
+    description: "İnşaat, elektrik ve makine mühendisliği gibi çeşitli mühendislik disiplinlerini kapsar.",
     officialPageUrl: "https://eng.emu.edu.tr"
   },
   {
     id: 8,
-    name: "Health Sciences",
-    description: "Focuses on various aspects of health care, including nursing and physiotherapy.",
+    name: "Sağlık Bilimleri",
+    description: "Hemşirelik ve fizyoterapi gibi sağlık hizmetlerinin çeşitli yönlerine odaklanır.",
     officialPageUrl: "https://shs.emu.edu.tr"
   },
   {
     id: 9,
-    name: "Law",
-    description: "Provides comprehensive legal education covering national and international law.",
+    name: "Hukuk",
+    description: "Ulusal ve uluslararası hukuk üzerine kapsamlı bir hukuk eğitimi sunar.",
     officialPageUrl: "https://law.emu.edu.tr"
   },
   {
     id: 10,
-    name: "Medicine",
-    description: "Offers medical education with a focus on both clinical practice and research.",
+    name: "Tıp",
+    description: "Klinik uygulama ve araştırma odaklı tıp eğitimi sunar.",
     officialPageUrl: "https://med.emu.edu.tr"
   },
   {
     id: 11,
-    name: "Pharmacy",
-    description: "Provides education in pharmaceutical sciences and pharmacy practice.",
+    name: "Eczacılık",
+    description: "Farmasötik bilimler ve eczane uygulamaları üzerine eğitim sunar.",
     officialPageUrl: "https://pharm.emu.edu.tr"
   },
   {
     id: 12,
-    name: "Tourism",
-    description: "Focuses on hospitality management, tourism planning, and related fields.",
+    name: "Turizm",
+    description: "Konaklama yönetimi, turizm planlaması ve ilgili alanlara odaklanır.",
     officialPageUrl: "https://tourism.emu.edu.tr"
   }
 ]
 
-export default function page() {
+export default function DepartmentsPage() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <Link href="/" className="inline-flex items-center mb-6 text-blue-600 hover:text-blue-800">
+      <Link href="/" className="inline-flex items-center mb-6 text-blue-600 hover:text-blue-800 transition-colors duration-300">
         <ArrowLeft className="w-4 h-4 mr-2" />
-        Anasayfaya Geri Dön
+        Anasayfaya Dön
       </Link>
-      <h1 className="text-3xl font-bold mb-6">DAÜ Fakülteleri</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <h1 className="text-4xl font-bold mb-8 text-gray-900">DAÜ Bölümleri</h1>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {departments.map((dept) => (
-          <div key={dept.id} className="bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-xl font-semibold mb-2">{dept.name}</h2>
-            <p className="text-gray-600 mb-4">{dept.description}</p>
+          <div key={dept.id} className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-200">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">{dept.name}</h2>
+            <p className="text-gray-600 mb-6">{dept.description}</p>
             <a 
               href={dept.officialPageUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline flex items-center"
+              className="inline-flex items-center text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300 font-bold py-2 px-4 rounded"
             >
-              Official Page
-              <ExternalLink className="w-3 h-3 ml-1" />
+              Resmi Sayfa
+              <ExternalLink className="w-4 h-4 ml-2" />
             </a>
           </div>
         ))}
