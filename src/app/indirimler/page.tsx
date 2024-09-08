@@ -13,60 +13,45 @@ interface Discount {
 const discounts: Discount[] = [
   {
     id: 1,
-    name: "Student Meal Deal",
-    place: "Campus Cafeteria",
-    googleMapsUrl: "https://goo.gl/maps/example1",
-    discountPrice: 15,
-    previousPrice: 25
+    name: "Itimat Öğrenci İndirini",
+    place: "Anıt Çemberi",
+    googleMapsUrl: "https://maps.app.goo.gl/Z2xcy5EyqHSLnG8t5",
+    discountPrice: 150,
+    previousPrice: 160
   },
-  {
-    id: 2,
-    name: "Textbook Bundle",
-    place: "EMU Bookstore",
-    googleMapsUrl: "https://goo.gl/maps/example2",
-    discountPrice: 200,
-    previousPrice: 300
-  },
-  {
-    id: 3,
-    name: "Gym Membership",
-    place: "EMU Sports Center",
-    googleMapsUrl: "https://goo.gl/maps/example3",
-    discountPrice: 50,
-    previousPrice: 80
-  }
 ]
 
-export default function page() {
+export default function StudentDiscountsPage() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <Link href="/" className="inline-flex items-center mb-6 text-blue-600 hover:text-blue-800">
+      <Link href="/" className="inline-flex items-center mb-6 text-blue-600 hover:text-blue-800 transition-colors duration-300">
         <ArrowLeft className="w-4 h-4 mr-2" />
-        Ana sayfaya Geri Dön
+        Ana Sayfaya Geri Dön
       </Link>
-      <h1 className="text-3xl font-bold mb-6">İndirimler</h1>
+      <h1 className="text-3xl font-bold text-gray-900 mb-6">Öğrenci İndirimleri</h1>
+      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {discounts.map((discount) => (
-          <div key={discount.id} className="bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-xl font-semibold mb-2 flex items-center">
-              <Tag className="w-5 h-5 mr-2" />
+          <div key={discount.id} className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-200">
+            <h2 className="text-xl font-semibold text-gray-900 mb-3 flex items-center">
+              <Tag className="w-5 h-5 mr-2 text-gray-700" />
               {discount.name}
             </h2>
-            <p className="flex items-center text-gray-600 mb-2">
+            <p className="flex items-center text-gray-700 mb-2">
               <MapPin className="w-4 h-4 mr-2" />
               <a 
                 href={discount.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline flex items-center"
+                className="text-blue-600 hover:underline flex items-center"
               >
                 {discount.place}
-                <ExternalLink className="w-3 h-3 ml-1" />
+                <ExternalLink className="w-3 h-3 ml-2 text-blue-600" />
               </a>
             </p>
-            <p className="text-green-600 font-semibold">
+            <p className="text-green-600 text-lg font-semibold mb-1">
               Now: {discount.discountPrice} TL
-              <span className="text-gray-400 line-through ml-2">
+              <span className="text-gray-500 line-through ml-2">
                 Was: {discount.previousPrice} TL
               </span>
             </p>
