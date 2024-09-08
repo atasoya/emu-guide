@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import { MapPin, Clock, Banknote, ArrowLeft, MessageSquare } from 'lucide-react'
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Cafes',
+}
+
 interface Cafe {
   name: string
   location: string

@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import { ArrowLeft, ExternalLink, Book, PlusCircle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Özel Dersler',
+}
+
 interface PrivateClass {
   id: number
   name: string

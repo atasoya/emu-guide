@@ -9,6 +9,12 @@ interface Club {
   activities: string[]
 }
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Kulüpler',
+}
+
 const clubs: Club[] = [
   {
     id: 1,

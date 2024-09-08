@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import { ArrowLeft, ExternalLink, Info } from 'lucide-react'
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'I am new',
+}
+
 interface NewContent {
   id: number
   name: string

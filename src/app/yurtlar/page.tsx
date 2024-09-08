@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import { ArrowLeft, MapPin, Banknote, ExternalLink, Home, MessageSquare } from 'lucide-react'
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Yurtlar',
+}
+
 /* interface Dormitory {
   id: number
   name: string

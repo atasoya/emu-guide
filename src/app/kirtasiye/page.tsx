@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import { ArrowLeft, ExternalLink, MapPin, Banknote, Printer, Book } from 'lucide-react'
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Kırtasiye',
+}
+
 interface Stationary {
   id: number
   name: string

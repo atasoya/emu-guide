@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import { ArrowLeft, ExternalLink, ShoppingBag, PlusCircle } from 'lucide-react'
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'For Sale',
+}
+
 interface SaleItem {
   id: number
   name: string

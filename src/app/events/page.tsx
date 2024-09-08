@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import { ArrowLeft, Calendar, MapPin, Banknote, ExternalLink } from 'lucide-react'
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Events',
+}
+
 const events = [
   {
     id: 1,
