@@ -43,7 +43,7 @@ export default function page() {
       
       <div className="mt-12 text-center">
         <a 
-          href="https://emu.edu.tr/submit-private-class"
+          href="/contact"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors duration-300 shadow-md"
