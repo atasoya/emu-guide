@@ -25,6 +25,13 @@ const transportations: Transportation[] = [
     officialLink: "https://itimatgroup.com/toplu-ta%C5%9Fima"
   },
   {
+    id: 2,
+    name: "KIB-HAS",
+    type:"bus",
+    explanation: "Private bus service for going and coming from airport.",
+    officialLink: "http://kibhas.org/"
+  },
+  {
     id: 3,
     name: "Kıbrıs Taxi",
     type:"taxi",
