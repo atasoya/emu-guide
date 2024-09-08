@@ -32,7 +32,7 @@ export default function Component() {
       "Etkinlikler", "Kulüpler", "Eğlence", "Fakülteler",
       "Burslar", "Ulaşım", "Özel Dersler", "Satılık", "Topluluklar",
       "Yeni Geldim","Kırtasiye",
-      "İndirimler", "Marketler", "Mağazalar", "Rehberler"
+      "Indirimler", "Marketler", "Mağazalar", "Rehberler"
     ]
   };
 
