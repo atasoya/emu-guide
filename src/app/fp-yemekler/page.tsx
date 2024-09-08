@@ -13,44 +13,12 @@ interface PPFood {
 const ppFoods: PPFood[] = [
   {
     id: 1,
-    name: "Chicken Döner",
-    place: "Merkez Büfe",
-    googleMapsUrl: "https://goo.gl/maps/example1",
-    price: 40,
-    comments: ["Great value for money", "Always fresh", "Quick service"]
+    name: "Tavuk Pilav",
+    place: "Campüs Kafe",
+    googleMapsUrl: "https://maps.app.goo.gl/6swCDoq8E5HhfAwY7",
+    price: 130,
+    comments: ["Ücretine göre yüksek değer", "Sağlıklı", "Hızlı servis"]
   },
-  {
-    id: 2,
-    name: "Vegetarian Wrap",
-    place: "Green Corner",
-    googleMapsUrl: "https://goo.gl/maps/example2",
-    price: 35,
-    comments: ["Healthy option", "Generous portions", "Tasty sauce"]
-  },
-  {
-    id: 3,
-    name: "Lahmacun",
-    place: "Öz Hatay",
-    googleMapsUrl: "https://goo.gl/maps/example3",
-    price: 25,
-    comments: ["Authentic taste", "Crispy crust", "Best deal on campus"]
-  },
-  {
-    id: 4,
-    name: "Tost with Ayran",
-    place: "Kantin",
-    googleMapsUrl: "https://goo.gl/maps/example4",
-    price: 30,
-    comments: ["Classic combo", "Perfect for quick lunch", "Consistent quality"]
-  },
-  {
-    id: 5,
-    name: "Falafel Plate",
-    place: "Lezzet Köşesi",
-    googleMapsUrl: "https://goo.gl/maps/example5",
-    price: 45,
-    comments: ["Filling meal", "Great for vegetarians", "Comes with salad and hummus"]
-  }
 ]
 
 export default function PricePerformanceFoods() {
