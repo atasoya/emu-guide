@@ -13,19 +13,19 @@ const guides: Guide[] = [
     id: 1,
     name: "Navigating EMU Campus",
     text: "A comprehensive guide to finding your way around the EMU campus, including key buildings and facilities.",
-    followUpLink: "https://emu.edu.tr/guides/campus-navigation"
+    followUpLink: "https://www.emu.edu.tr/campusmap"
   },
   {
     id: 2,
     name: "Student Life in Famagusta",
     text: "Everything you need to know about living in Famagusta as an EMU student, from accommodation to local attractions.",
-    followUpLink: "https://emu.edu.tr/guides/student-life-famagusta"
+    followUpLink: "https://www.emu.edu.tr/campus-life"
   },
   {
     id: 3,
-    name: "Academic Resources",
-    text: "A guide to all the academic resources available to EMU students, including libraries, online databases, and study spaces.",
-    followUpLink: "https://emu.edu.tr/guides/academic-resources"
+    name: "How to go to the Nicosia",
+    text: "A guide to navigate your way to Nicosia from EMU, including public transport options and travel tips.",
+    followUpLink: "https://transportation.emu.edu.tr/en/announcements?pid=64&t=nicosia-emu-nicosia-free-student-bus-services"
   }
 ]
 
@@ -36,7 +36,7 @@ export default function GuidesPage() {
         <ArrowLeft className="w-4 h-4 mr-2" />
         Back to Home
       </Link>
-      <h1 className="text-4xl font-bold mb-8 text-gray-900">EMU Student Guides</h1>
+      <h1 className="text-4xl font-bold mb-8 text-gray-900">Guides</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {guides.map((guide) => (
