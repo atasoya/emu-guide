@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "emu.guide - Your comprehensive guide to Emu",
-  description: "Everything you need to know about Emu",
+  description: "Everything you need to know about Eastern Mediterranean University",
 };
 
 export default function RootLayout({
