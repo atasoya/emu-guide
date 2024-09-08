@@ -13,24 +13,81 @@ const healthFacilities: HealthFacility[] = [
   {
     id: 1,
     name: "EMU Health Center",
-    type: "Clinic",
+    type: "Hospital",
     location: "EMU Campus",
-    googleMapsUrl: "https://goo.gl/maps/example1"
+    googleMapsUrl: "https://maps.app.goo.gl/ywL1Sa8FqCijTizA7"
   },
   {
     id: 2,
     name: "Famagusta State Hospital",
     type: "Hospital",
     location: "Salamis Road",
-    googleMapsUrl: "https://goo.gl/maps/example2"
+    googleMapsUrl: "https://maps.app.goo.gl/Qxt2Nw3XXtaPLCeB7"
   },
   {
     id: 3,
-    name: "Central Pharmacy",
+    name: "Famagusta Life Hospital",
+    type: "Hospital",
+    location: "City Mall Area",
+    googleMapsUrl: "https://maps.app.goo.gl/Aj3Wp734JDZ5HgUp8"
+  },
+  {
+    id: 4,
+    name: "Famagusta Central Hospital",
+    type: "Hospital",
+    location: "Eşref Bitlis Cd",
+    googleMapsUrl: "https://maps.app.goo.gl/bUmqfzp99hQsJErb7"
+  },
+  {
+    id: 5,
+    name: "Kunter Trust Hospital",
+    type: "Hospital",
+    location: "Anıt Roundabout Area",
+    googleMapsUrl: "https://maps.app.goo.gl/WBELJHP3Py7Tm8p37"
+  },
+  {
+    id: 5,
+    name: "MediPark Clinic",
+    type: "Clinic",
+    location: "Abant Sk",
+    googleMapsUrl: "https://maps.app.goo.gl/x9iHAdrpXCzGYo249"
+  },
+  {
+    id: 6,
+    name: "Dentica",
+    type: "Clinic",
+    location: "Bayraktar Road",
+    googleMapsUrl: "https://maps.app.goo.gl/PKyLAsZrD3HymNz99"
+  },
+  {
+    id: 7,
+    name: "Başarır Dental Clinic",
+    type: "Clinic",
+    location: "Salamis Yolu",
+    googleMapsUrl: "https://maps.app.goo.gl/kzugT5qHwjWGcier8"
+  },
+  {
+    id: 8,
+    name: "Sümer Pharmacy",
     type: "Pharmacy",
-    location: "City Center",
-    googleMapsUrl: "https://goo.gl/maps/example3"
-  }
+    location: "Salamis Yolu",
+    googleMapsUrl: "https://maps.app.goo.gl/Z9AMdrA3vYHJFpig7"
+  },
+  {
+    id: 9,
+    name: "Nasim Pharmacy",
+    type: "Pharmacy",
+    location: "Salamis Yolu",
+    googleMapsUrl: "https://maps.app.goo.gl/dwHiEcMiVEtgcAF49"
+  },
+  {
+    id: 10,
+    name: "Hande Besmel Pharmacy",
+    type: "Pharmacy",
+    location: "Salamis Yolu",
+    googleMapsUrl: "https://maps.app.goo.gl/qJfUwkQSaDs9dgct9"
+  },
+  
 ]
 
 export default function HealthPage() {
