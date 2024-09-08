@@ -46,7 +46,7 @@ export default function Component() {
       <header className="sticky top-0 z-50 w-full bg-white shadow-md">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <Link href="/" className="text-xl font-bold text-gray-800 hover:underline">
-            emu.tips
+            emu.guide
           </Link>
           <div className="flex items-center space-x-4">
             <button
@@ -57,7 +57,7 @@ export default function Component() {
               <Globe className="h-6 w-6" />
               <span>{language === 'en' ? 'TR' : 'EN'}</span>
             </button>
-            <button className="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-blue-600">
+            <button className="md:hidden sm:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-blue-600">
               <Menu className="h-6 w-6" />
             </button>
           </div>
@@ -72,7 +72,7 @@ export default function Component() {
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  {language === 'en' ? 'Welcome to emu.tips' : 'emu.tips\'e Hoş Geldiniz'}
+                  {language === 'en' ? 'Welcome to emu.guide' : 'emu.guide\'a Hoş Geldiniz'}
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                   {language === 'en' ? 'Your comprehensive guide to EMU' : 'DAÜ için kapsamlı rehberiniz'}

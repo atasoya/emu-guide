@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "emu.tips - Your comprehensive guide to Emu",
+  title: "emu.guide - Your comprehensive guide to Emu",
   description: "Everything you need to know about Emu",
 };
 
