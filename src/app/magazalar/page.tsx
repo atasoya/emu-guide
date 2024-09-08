@@ -172,9 +172,9 @@ export default function StoresPage() {
     <div className="container mx-auto px-4 py-8">
       <Link href="/" className="inline-flex items-center mb-6 text-blue-600 hover:text-blue-800 transition-colors duration-200">
         <ArrowLeft className="w-4 h-4 mr-2" />
-        Back to Home
+        Ana Sayfaya Geri Dön
       </Link>
-      <h1 className="text-4xl font-bold mb-8 text-gray-900">Explore Stores</h1>
+      <h1 className="text-4xl font-bold mb-8 text-gray-900">Mağazaları Keşfet</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {stores.map((store) => (
@@ -185,7 +185,7 @@ export default function StoresPage() {
               {store.type !== 'Teknoloji' && store.type !== 'Giyim' && <Tag className="w-6 h-6 mr-3 text-yellow-500" />}
               {store.name}
             </h2>
-            <p className="text-gray-600 mb-4">Type: <span className="font-medium text-gray-800">{store.type}</span></p>
+            <p className="text-gray-600 mb-4">İçerik: <span className="font-medium text-gray-800">{store.type}</span></p>
             <div className="flex items-center bg-gray-100 p-4 rounded-lg">
               <MapPin className="w-5 h-5 mr-3 text-green-600" />
               <a 

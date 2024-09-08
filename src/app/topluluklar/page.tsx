@@ -80,7 +80,7 @@ export default function CommunityPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors duration-300"
             >
-              Join Community
+              Topluluğa Katıl
               <ExternalLink className="w-4 h-4 ml-2 text-white" />
             </a>
           </div>

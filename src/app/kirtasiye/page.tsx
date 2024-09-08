@@ -76,7 +76,7 @@ export default function StationaryPage() {
                 {shop.priceScale}
               </p>
               <div>
-                <h3 className="font-semibold mb-2">Services:</h3>
+                <h3 className="font-semibold mb-2">Servisler:</h3>
                 <ul className="list-disc list-inside space-y-2">
                   {shop.services.map((service, index) => (
                     <li key={index} className="text-sm text-gray-700 flex items-center">
