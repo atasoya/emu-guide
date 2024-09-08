@@ -106,12 +106,12 @@ export default function Component() {
       {/* Footer */}
       <footer className="bg-gray-100 border-t py-4 mt-8">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
-          <p className="text-sm text-gray-500">© 2024 emu.tips. All rights reserved.</p>
+          <p className="text-sm text-gray-500">© 2024 emu.guide. All rights reserved.</p>
           <nav className="flex space-x-4 text-sm">
-            <Link href="#" className="text-gray-600 hover:text-blue-600">
+            <Link href="https://www.emu.edu.tr/tr" className="text-gray-600 hover:text-blue-600">
               {language === 'en' ? 'Official Website' : 'Resmi Web Sitesi'}
             </Link>
-            <Link href="#" className="text-gray-600 hover:text-blue-600">
+            <Link href="/contact" className="text-gray-600 hover:text-blue-600">
               {language === 'en' ? 'Partner With Us' : 'Bizimle Çalışın'}
             </Link>
           </nav>
