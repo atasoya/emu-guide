@@ -75,7 +75,7 @@ export default function Component() {
                   {language === 'en' ? 'Welcome to emu.guide' : 'emu.guide\'a Hoş Geldiniz'}
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  {language === 'en' ? 'Your comprehensive guide to EMU' : 'DAÜ için kapsamlı rehberiniz'}
+                  {language === 'en' ? 'Your comprehensive guide to Eastern Mediterranean University' : 'Doğu Akdeniz Üniversitesi için kapsamlı rehberiniz'}
                 </p>
               </div>
             </div>
