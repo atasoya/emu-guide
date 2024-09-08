@@ -1,6 +1,14 @@
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight, Calendar } from 'lucide-react'
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'News',
+}
+ 
+
+
 interface NewsItem {
   id: number
   title: string
