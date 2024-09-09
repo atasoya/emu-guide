@@ -11,10 +11,18 @@ const events = [
   {
     id: 1,
     name: "Orientation Days",
-    date: "2024-02-22",
+    date: "2024-09-2",
     place: "EMU Activity Center",
     googleMapsUrl: "https://maps.app.goo.gl/w5LpmBR1FN8j3FoL6",
     cost: "Free for students"
+  },
+  {
+    id: 2,
+    name: "European Mobility Week",
+    date: "2024-09-21",
+    place: "Zambak Holiday Village",
+    googleMapsUrl: "https://maps.app.goo.gl/UQ2aVFbn119kQPcV7",
+    cost: "Free"
   }
 ]
 
