@@ -74,8 +74,8 @@ export default function Component() {
             className="font-bold text-lg hover:underline"
           >
             {language === 'en'
-              ? 'Check out dauhub: the best Instagram humor page in EMU'
-              : 'dauhub\'ı keşfedin: Daü\'deki en iyi Instagram mizah sayfası'}
+              ? 'Check out DauHub: the top Instagram humor page at EMU'
+              : 'DauHub\'ı keşfedin: Daü\'deki en iyi Instagram mizah sayfası '}
           </a>
         </div>
       </section>
