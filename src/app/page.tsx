@@ -71,7 +71,7 @@ export default function Component() {
             href="https://www.instagram.com/dauhub"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-bold text-lg hover:underline"
+            className="font-bold text-sm hover:underline md:text-lg"
           >
             {language === 'en'
               ? 'Check out DauHub: the top Instagram humor page at EMU'
