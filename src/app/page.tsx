@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, Globe } from 'lucide-react';
+import Image from 'next/image';
 
 // Utility function to replace Turkish characters with English equivalents
 const replaceTurkishChars = (text: string) => {
@@ -66,15 +67,26 @@ export default function Component() {
 
       {/* Main Content */}
       <main className="flex-1">
-        {/* Welcome Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gray-50">
-          <div className="container mx-auto max-w-screen-lg px-4 md:px-6">
+        {/* Welcome Section with Blurred Background */}
+        <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 overflow-hidden">
+          <div className="absolute inset-0 w-full h-full">
+            <Image
+              src="/emu-bg.jpg"
+              alt="EMU Campus"
+              fill
+              objectFit="cover"
+              quality={100}
+              className="absolute inset-0 w-full h-full object-cover filter blur-sm"
+            />
+          </div>
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div className="relative container mx-auto max-w-screen-lg px-4 md:px-6 z-10">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
                   {language === 'en' ? 'Welcome to emu.guide' : 'emu.guide\'a Hoş Geldiniz'}
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+                <p className="mx-auto max-w-[700px] text-xl text-gray-200">
                   {language === 'en' ? 'Your comprehensive guide to Eastern Mediterranean University' : 'Doğu Akdeniz Üniversitesi için kapsamlı rehberiniz'}
                 </p>
               </div>
