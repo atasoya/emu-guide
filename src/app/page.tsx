@@ -64,6 +64,22 @@ export default function Component() {
         </div>
       </header>
 
+      {/* Featured Announcement */}
+      <section className="bg-yellow-100 text-yellow-900 py-2">
+        <div className="container mx-auto text-center">
+          <a
+            href="https://www.instagram.com/dauhub"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold text-lg hover:underline"
+          >
+            {language === 'en'
+              ? 'Check out dauhub: the best Instagram humor page in EMU'
+              : 'dauhub\'ı keşfedin: Daü\'deki en iyi Instagram mizah sayfası'}
+          </a>
+        </div>
+      </section>
+
       {/* Main Content */}
       <main className="flex-1">
         {/* Welcome Section */}
