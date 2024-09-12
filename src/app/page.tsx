@@ -64,7 +64,7 @@ export default function Component() {
         </div>
       </header>
 
-      {/* Featured Announcement */}
+      {/* Featured Announcement 
       <section className="bg-yellow-100 text-yellow-900 py-2">
         <div className="container mx-auto text-center">
           <a
@@ -79,6 +79,7 @@ export default function Component() {
           </a>
         </div>
       </section>
+      */}
 
       {/* Main Content */}
       <main className="flex-1">
