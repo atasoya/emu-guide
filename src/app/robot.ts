@@ -18,7 +18,7 @@ export default function robots(): MetadataRoute.Robots {
           "Yeni Geldim","Kırtasiye",
           "Indirimler", "Marketler", "Mağazalar", "Rehberler"
         ]
-    };
+      };
 
     const allowRules = ["/"];
 

@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
           "Yeni Geldim","Kırtasiye",
           "Indirimler", "Marketler", "Mağazalar", "Rehberler"
         ]
-    };
+      };
 
     const sitemapEntries: MetadataRoute.Sitemap = [
         {
