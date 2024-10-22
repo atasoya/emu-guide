@@ -1,19 +1,26 @@
-import Link from 'next/link'
-import { ArrowLeft, MapPin, ExternalLink, Banknote, PhoneCall, Dumbbell } from 'lucide-react'
+import Link from "next/link";
+import {
+  ArrowLeft,
+  MapPin,
+  ExternalLink,
+  Banknote,
+  PhoneCall,
+  Dumbbell,
+} from "lucide-react";
 
-import type { Metadata } from 'next'
- 
+import type { Metadata } from "next";
+
 export const metadata: Metadata = {
-  title: 'Fitness',
-}
+  title: "Fitness",
+};
 
 interface FitnessCenter {
-  id: number
-  name: string
-  location: string
-  googleMapsUrl: string
-  contactLink: string
-  priceScale: '$' | '$$' | '$$$'
+  id: number;
+  name: string;
+  location: string;
+  googleMapsUrl: string;
+  contactLink: string;
+  priceScale: "$" | "$$" | "$$$";
 }
 
 const fitnessCenters: FitnessCenter[] = [
@@ -23,7 +30,7 @@ const fitnessCenters: FitnessCenter[] = [
     location: "EMU Campus",
     googleMapsUrl: "https://maps.app.goo.gl/orWsnyyazWnQ7eKG6",
     contactLink: "tel:+903926301234",
-    priceScale: "$"
+    priceScale: "$",
   },
   {
     id: 2,
@@ -31,7 +38,7 @@ const fitnessCenters: FitnessCenter[] = [
     location: "Pop Art",
     googleMapsUrl: "https://maps.app.goo.gl/9nxK6mV3AGX9T1cv7",
     contactLink: "tel:+903924443676",
-    priceScale: "$$"
+    priceScale: "$$",
   },
   {
     id: 3,
@@ -39,7 +46,7 @@ const fitnessCenters: FitnessCenter[] = [
     location: "Nural Dormitory",
     googleMapsUrl: "https://maps.app.goo.gl/NCYim4RwZck4fxy3A",
     contactLink: "tel:+905338305010",
-    priceScale: "$$"
+    priceScale: "$$",
   },
   {
     id: 4,
@@ -47,7 +54,7 @@ const fitnessCenters: FitnessCenter[] = [
     location: "Grand Aras",
     googleMapsUrl: "https://maps.app.goo.gl/rBgd6325Lt6ZLnkJ6",
     contactLink: "tel:+905338766222",
-    priceScale: "$$"
+    priceScale: "$$",
   },
   {
     id: 5,
@@ -55,7 +62,7 @@ const fitnessCenters: FitnessCenter[] = [
     location: "Sosyal Konutlar",
     googleMapsUrl: "https://maps.app.goo.gl/qUbpH6e7Ga5b1cDQ6",
     contactLink: "tel:+905338766222",
-    priceScale: "$$"
+    priceScale: "$$",
   },
   {
     id: 6,
@@ -63,7 +70,7 @@ const fitnessCenters: FitnessCenter[] = [
     location: "NorthernLAND Premier",
     googleMapsUrl: "https://maps.app.goo.gl/Rdjc48HWVFvXVqsB6",
     contactLink: "tel:+903924444443",
-    priceScale: "$$$"
+    priceScale: "$$$",
   },
   {
     id: 7,
@@ -71,7 +78,7 @@ const fitnessCenters: FitnessCenter[] = [
     location: "Salamis Yolu",
     googleMapsUrl: "https://maps.app.goo.gl/eDwVLzjomcbBwJWg6",
     contactLink: "tel:+903923652929",
-    priceScale: "$$$"
+    priceScale: "$$$",
   },
   {
     id: 8,
@@ -79,7 +86,7 @@ const fitnessCenters: FitnessCenter[] = [
     location: "Salamis Yolu",
     googleMapsUrl: "https://maps.app.goo.gl/JN3YHJDdJLzS133r8",
     contactLink: "tel:+905338862428",
-    priceScale: "$$"
+    priceScale: "$$",
   },
   {
     id: 9,
@@ -87,7 +94,7 @@ const fitnessCenters: FitnessCenter[] = [
     location: "MAGEM",
     googleMapsUrl: "https://maps.app.goo.gl/4v2KP5Q75RffmQcn6",
     contactLink: "tel:+905338641120",
-    priceScale: "$$"
+    priceScale: "$$",
   },
   {
     id: 10,
@@ -95,22 +102,28 @@ const fitnessCenters: FitnessCenter[] = [
     location: "Önder",
     googleMapsUrl: "https://maps.app.goo.gl/Lq1ngAXYy6Awvkza6",
     contactLink: "tel:+905338835325",
-    priceScale: "$$"
+    priceScale: "$$",
   },
-]
+];
 
 export default function FitnessPage() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <Link href="/" className="inline-flex items-center mb-6 text-blue-600 hover:text-blue-800 transition-colors duration-300">
+      <Link
+        href="/"
+        className="inline-flex items-center mb-6 text-blue-600 hover:text-blue-800 transition-colors duration-300"
+      >
         <ArrowLeft className="w-4 h-4 mr-2" />
         Back to Home
       </Link>
       <h1 className="text-3xl font-bold mb-6 text-gray-900">Fitness Centers</h1>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {fitnessCenters.map((center) => (
-          <div key={center.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 transition-shadow duration-200 hover:shadow-lg">
+          <div
+            key={center.id}
+            className="bg-white rounded-lg shadow-md p-6 border border-gray-200 transition-shadow duration-200 hover:shadow-lg"
+          >
             <h2 className="text-xl font-semibold mb-4 flex items-center text-gray-900">
               <Dumbbell className="w-5 h-5 mr-2 text-blue-500" />
               {center.name}
@@ -118,7 +131,7 @@ export default function FitnessPage() {
             <div className="space-y-3">
               <p className="flex items-center text-gray-600">
                 <MapPin className="w-4 h-4 mr-2 " />
-                <a 
+                <a
                   href={center.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -130,10 +143,7 @@ export default function FitnessPage() {
               </p>
               <p className="flex items-center text-gray-600">
                 <PhoneCall className="w-4 h-4 mr-2" />
-                <a 
-                  href={center.contactLink}
-                  className="hover:underline"
-                >
+                <a href={center.contactLink} className="hover:underline">
                   Contact
                 </a>
               </p>
@@ -146,5 +156,5 @@ export default function FitnessPage() {
         ))}
       </div>
     </div>
-  )
+  );
 }

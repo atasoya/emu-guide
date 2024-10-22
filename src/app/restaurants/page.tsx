@@ -1,21 +1,27 @@
-import Link from 'next/link'
-import { MapPin, Clock, Banknote, ArrowLeft, MessageSquare } from 'lucide-react'
+import Link from "next/link";
+import {
+  MapPin,
+  Clock,
+  Banknote,
+  ArrowLeft,
+  MessageSquare,
+} from "lucide-react";
 
-import type { Metadata } from 'next'
- 
+import type { Metadata } from "next";
+
 export const metadata: Metadata = {
-  title: 'Restaurants',
-}
+  title: "Restaurants",
+};
 
 interface Cafe {
-  name: string
-  location: string
-  googleMapsUrl: string
-  openTime: string
-  closeTime: string
-  studyScore: number
-  priceRange: '$' | '$$' | '$$$'
-  comments: string[]
+  name: string;
+  location: string;
+  googleMapsUrl: string;
+  openTime: string;
+  closeTime: string;
+  studyScore: number;
+  priceRange: "$" | "$$" | "$$$";
+  comments: string[];
 }
 
 const cafes: Cafe[] = [
@@ -27,7 +33,7 @@ const cafes: Cafe[] = [
     closeTime: "00:00",
     studyScore: 7,
     priceRange: "$$",
-    comments: ["Good food", "Always has space", "Popular place"]
+    comments: ["Good food", "Always has space", "Popular place"],
   },
   {
     name: "Miami Restaurant",
@@ -37,7 +43,7 @@ const cafes: Cafe[] = [
     closeTime: "20:00",
     studyScore: 5,
     priceRange: "$",
-    comments: ["Pay for what you get", "Clean & healthy food", "Quiet"]
+    comments: ["Pay for what you get", "Clean & healthy food", "Quiet"],
   },
   {
     name: "Twister Cafe",
@@ -47,7 +53,7 @@ const cafes: Cafe[] = [
     closeTime: "00:00",
     studyScore: 5,
     priceRange: "$",
-    comments: ["Fast", "Quiet", "Fair prices"]
+    comments: ["Fast", "Quiet", "Fair prices"],
   },
   {
     name: "Jojo Cafe",
@@ -57,7 +63,7 @@ const cafes: Cafe[] = [
     closeTime: "19:00",
     studyScore: 9,
     priceRange: "$$",
-    comments: ["Best place to study", "Good food", "Plugs available"] 
+    comments: ["Best place to study", "Good food", "Plugs available"],
   },
   {
     name: "Baron Cafe",
@@ -67,7 +73,7 @@ const cafes: Cafe[] = [
     closeTime: "19:00",
     studyScore: 6,
     priceRange: "$$",
-    comments: ["Always has space", "Offers food & market", "Central location"] 
+    comments: ["Always has space", "Offers food & market", "Central location"],
   },
   {
     name: "The King of Chicken Burger",
@@ -77,7 +83,7 @@ const cafes: Cafe[] = [
     closeTime: "10:00",
     studyScore: 6,
     priceRange: "$$",
-    comments: ["Large portions", "Slow delivery times", "Great for groups"] 
+    comments: ["Large portions", "Slow delivery times", "Great for groups"],
   },
   {
     name: "Tabledot Restaurant",
@@ -87,7 +93,7 @@ const cafes: Cafe[] = [
     closeTime: "19:00",
     studyScore: 6,
     priceRange: "$$",
-    comments: ["Popular place", "Central location", "Has AC"]
+    comments: ["Popular place", "Central location", "Has AC"],
   },
   {
     name: "Sandras Cafe",
@@ -97,7 +103,7 @@ const cafes: Cafe[] = [
     closeTime: "19:00",
     studyScore: 7,
     priceRange: "$$",
-    comments: ["Clean", "Has pool table & pinball", "Has a market"]
+    comments: ["Clean", "Has pool table & pinball", "Has a market"],
   },
   {
     name: "Sultan Cafe",
@@ -107,7 +113,11 @@ const cafes: Cafe[] = [
     closeTime: "19:00",
     studyScore: 7,
     priceRange: "$",
-    comments: ["Open 24/7 during exam weeks", "Very friendly", "Has a market & cafe"]
+    comments: [
+      "Open 24/7 during exam weeks",
+      "Very friendly",
+      "Has a market & cafe",
+    ],
   },
   {
     name: "R&D Cafe",
@@ -117,7 +127,7 @@ const cafes: Cafe[] = [
     closeTime: "19:00",
     studyScore: 6,
     priceRange: "$$",
-    comments: ["Big space", "Good food & coffee", "Has a market"]
+    comments: ["Big space", "Good food & coffee", "Has a market"],
   },
   {
     name: "Sosla Bi Doner",
@@ -127,7 +137,7 @@ const cafes: Cafe[] = [
     closeTime: "02:00",
     studyScore: 5,
     priceRange: "$",
-    comments: ["Cheap", "Fast", "Outside of campus"]
+    comments: ["Cheap", "Fast", "Outside of campus"],
   },
   {
     name: "Crunchy",
@@ -137,7 +147,7 @@ const cafes: Cafe[] = [
     closeTime: "03:00",
     studyScore: 7,
     priceRange: "$$",
-    comments: ["Good quality", "Tasty", "Quiet"]
+    comments: ["Good quality", "Tasty", "Quiet"],
   },
   {
     name: "Red Bear Restaurant",
@@ -147,7 +157,7 @@ const cafes: Cafe[] = [
     closeTime: "00:00",
     studyScore: 7,
     priceRange: "$$",
-    comments: ["Good quality", "Tasty", "Quiet"]
+    comments: ["Good quality", "Tasty", "Quiet"],
   },
   {
     name: "Şampiyon Restaurant",
@@ -157,28 +167,38 @@ const cafes: Cafe[] = [
     closeTime: "21:00",
     studyScore: 5,
     priceRange: "$$",
-    comments: ["Good quality", "Tasty", "Quiet"]
-  }
-]
+    comments: ["Good quality", "Tasty", "Quiet"],
+  },
+];
 
 export default function page() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <Link href="/" className="inline-flex items-center mb-6 text-blue-600 hover:text-blue-800 transition-colors duration-300">
+      <Link
+        href="/"
+        className="inline-flex items-center mb-6 text-blue-600 hover:text-blue-800 transition-colors duration-300"
+      >
         <ArrowLeft className="w-4 h-4 mr-2" />
         Back to Home
       </Link>
-      <h1 className="text-4xl font-bold text-gray-900 mb-6">Restaurants near EMU</h1>
+      <h1 className="text-4xl font-bold text-gray-900 mb-6">
+        Restaurants near EMU
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {cafes.map((cafe, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-200">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-2">{cafe.name}</h2>
+          <div
+            key={index}
+            className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-200"
+          >
+            <h2 className="text-2xl font-semibold text-gray-900 mb-2">
+              {cafe.name}
+            </h2>
             <div className="space-y-2">
               <p className="flex items-center">
                 <MapPin className="w-5 h-5 mr-2 text-gray-500" />
-                <a 
-                  href={cafe.googleMapsUrl} 
-                  target="_blank" 
+                <a
+                  href={cafe.googleMapsUrl}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline text-blue-600"
                 >
@@ -195,11 +215,15 @@ export default function page() {
               </p>
               <p className="flex items-center">
                 <span className="font-semibold mr-2">Study Score:</span>
-                <span className={`px-2 py-1 rounded ${
-                  cafe.studyScore >= 8 ? 'bg-green-100 text-green-800' :
-                  cafe.studyScore >= 5 ? 'bg-yellow-100 text-yellow-800' :
-                  'bg-red-100 text-red-800'
-                }`}>
+                <span
+                  className={`px-2 py-1 rounded ${
+                    cafe.studyScore >= 8
+                      ? "bg-green-100 text-green-800"
+                      : cafe.studyScore >= 5
+                      ? "bg-yellow-100 text-yellow-800"
+                      : "bg-red-100 text-red-800"
+                  }`}
+                >
                   {cafe.studyScore}/10
                 </span>
               </p>
@@ -210,7 +234,9 @@ export default function page() {
                 </h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-600">
                   {cafe.comments.map((comment, i) => (
-                    <li key={i} className="text-sm">{comment}</li>
+                    <li key={i} className="text-sm">
+                      {comment}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -219,5 +245,5 @@ export default function page() {
         ))}
       </div>
     </div>
-  )
+  );
 }

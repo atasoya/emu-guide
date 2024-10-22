@@ -1,11 +1,18 @@
-import Link from 'next/link'
-import { ArrowLeft, MapPin, Banknote, ExternalLink, Home, MessageSquare } from 'lucide-react'
+import Link from "next/link";
+import {
+  ArrowLeft,
+  MapPin,
+  Banknote,
+  ExternalLink,
+  Home,
+  MessageSquare,
+} from "lucide-react";
 
-import type { Metadata } from 'next'
- 
+import type { Metadata } from "next";
+
 export const metadata: Metadata = {
-  title: 'Dormitories',
-}
+  title: "Dormitories",
+};
 
 /* interface Dormitory {
   id: number
@@ -27,7 +34,7 @@ const dormitories = [
     priceRange: "$$$",
     officialPageUrl: "https://www.alfamcyprus.com/",
     facilities: ["Wi-Fi", "Air Conditioning", "Gym", "Laundry"],
-    comments: ["Modern and clean", "Great location"]
+    comments: ["Modern and clean", "Great location"],
   },
   {
     id: 2,
@@ -35,9 +42,10 @@ const dormitories = [
     place: "EMU Campus",
     googleMapsUrl: "https://maps.app.goo.gl/ub9yUoV87SEhQcjr7",
     priceRange: "$$",
-    officialPageUrl: "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/ugursal",
+    officialPageUrl:
+      "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/ugursal",
     facilities: ["Wi-Fi", "Shared Kitchen", "Study Rooms"],
-    comments: ["Affordable", "Good community"]
+    comments: ["Affordable", "Good community"],
   },
   {
     id: 3,
@@ -45,9 +53,10 @@ const dormitories = [
     place: "EMU Campus",
     googleMapsUrl: "https://maps.app.goo.gl/WtCYaZHgE8zXDd4B7",
     priceRange: "$$",
-    officialPageUrl: "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/longson",
+    officialPageUrl:
+      "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/longson",
     facilities: ["Wi-Fi", "Air Conditioning", "Shared Bathrooms"],
-    comments: ["Convenient location", "Cafeteria","Student kitchens"]
+    comments: ["Convenient location", "Cafeteria", "Student kitchens"],
   },
   {
     id: 4,
@@ -55,9 +64,10 @@ const dormitories = [
     place: "EMU Campus",
     googleMapsUrl: "https://goo.gl/maps/inn-dorm",
     priceRange: "$",
-    officialPageUrl: "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/inn-dorm",
+    officialPageUrl:
+      "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/inn-dorm",
     facilities: ["Cafeteria", "Interior Garden", "Sea View Rooms"],
-    comments: ["Basic but comfortable", "Friendly staff"]
+    comments: ["Basic but comfortable", "Friendly staff"],
   },
   {
     id: 5,
@@ -65,9 +75,10 @@ const dormitories = [
     place: "EMU Campus",
     googleMapsUrl: "https://maps.app.goo.gl/fmCqkQbUYD4nZDkVA",
     priceRange: "$$$",
-    officialPageUrl: "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/prime-living",
-    facilities: ["Electric generator", "Gym", "Copy center",],
-    comments: ["Safe", "Top-notch facilities"]
+    officialPageUrl:
+      "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/prime-living",
+    facilities: ["Electric generator", "Gym", "Copy center"],
+    comments: ["Safe", "Top-notch facilities"],
   },
   {
     id: 6,
@@ -75,9 +86,14 @@ const dormitories = [
     place: "EMU Campus",
     googleMapsUrl: "https://maps.app.goo.gl/Ajeusbf9xM47aqEx8",
     priceRange: "$",
-    officialPageUrl: "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/ramen",
-    facilities: ["Restaurant", "Exchange Office", "Room cleaning twice per week"],
-    comments: ["Clean", "Basic amenities"]
+    officialPageUrl:
+      "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/ramen",
+    facilities: [
+      "Restaurant",
+      "Exchange Office",
+      "Room cleaning twice per week",
+    ],
+    comments: ["Clean", "Basic amenities"],
   },
   {
     id: 7,
@@ -87,7 +103,7 @@ const dormitories = [
     priceRange: "$$",
     officialPageUrl: "https://www.emu.edu.tr/dormitories/golden-plus",
     facilities: ["Male/female Seperate Blocks", "Gym", "Project & Study Room"],
-    comments: ["Premium", "Great value"]
+    comments: ["Premium", "Great value"],
   },
   {
     id: 8,
@@ -96,8 +112,12 @@ const dormitories = [
     googleMapsUrl: "https://goo.gl/maps/novel-centre-point",
     priceRange: "$$$",
     officialPageUrl: "https://www.emu.edu.tr/dormitories/novel-centre-point",
-    facilities: ["24 hour hot and cold running water", "Room service", "Swimming pool",],
-    comments: ["Luxurious", "Very comfortable"]
+    facilities: [
+      "24 hour hot and cold running water",
+      "Room service",
+      "Swimming pool",
+    ],
+    comments: ["Luxurious", "Very comfortable"],
   },
   {
     id: 9,
@@ -105,9 +125,10 @@ const dormitories = [
     place: "South Campus",
     googleMapsUrl: "https://maps.app.goo.gl/WTw9d2aJS2BmbJyo7",
     priceRange: "$$$",
-    officialPageUrl: "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/astra-plus",
-    facilities:  ["Gym", "Laundry", "Hairdresser"],
-    comments: ["Good facilities", "Great value"]
+    officialPageUrl:
+      "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/astra-plus",
+    facilities: ["Gym", "Laundry", "Hairdresser"],
+    comments: ["Good facilities", "Great value"],
   },
   {
     id: 10,
@@ -115,9 +136,10 @@ const dormitories = [
     place: "South Campus",
     googleMapsUrl: "https://maps.app.goo.gl/jqnStSiCQkqAYsgK6",
     priceRange: "$$$",
-    officialPageUrl: "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/pop-art",
+    officialPageUrl:
+      "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/pop-art",
     facilities: ["Gym", "Gloria Jeans", "Cinema"],
-    comments: ["Modern design", "Comfortable"]
+    comments: ["Modern design", "Comfortable"],
   },
   {
     id: 11,
@@ -125,9 +147,10 @@ const dormitories = [
     place: "EMU Campus",
     googleMapsUrl: "https://maps.app.goo.gl/U4V1bM42nVWU1xdRA",
     priceRange: "$$",
-    officialPageUrl: "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/nural",
+    officialPageUrl:
+      "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/nural",
     facilities: ["Laundry facilities", "Generator", "Fitness Center"],
-    comments: ["Market(7/24)", "Friendly staff"]
+    comments: ["Market(7/24)", "Friendly staff"],
   },
   {
     id: 12,
@@ -135,29 +158,37 @@ const dormitories = [
     place: "EMU Campus",
     googleMapsUrl: "https://maps.app.goo.gl/UvcUYZEw6w3ZMttJ8",
     priceRange: "$$",
-    officialPageUrl: "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/grand-aras",
+    officialPageUrl:
+      "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/grand-aras",
     facilities: ["Gym", "Library", "Key Card System"],
-    comments: ["Good location", "Well maintained"]
-  }
+    comments: ["Good location", "Well maintained"],
+  },
 ];
-
 
 export default function page() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <Link href="/" className="inline-flex items-center mb-6 text-blue-600 hover:text-blue-800">
+      <Link
+        href="/"
+        className="inline-flex items-center mb-6 text-blue-600 hover:text-blue-800"
+      >
         <ArrowLeft className="w-4 h-4 mr-2" />
         Back to Home
       </Link>
       <h1 className="text-3xl font-bold mb-6">EMU Dormitories</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {dormitories.map((dorm) => (
-          <div key={dorm.id} className="bg-white rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
-            <h2 className="text-2xl font-bold mb-3 text-gray-900">{dorm.name}</h2>
+          <div
+            key={dorm.id}
+            className="bg-white rounded-lg shadow-md p-6 transition-transform transform hover:scale-105"
+          >
+            <h2 className="text-2xl font-bold mb-3 text-gray-900">
+              {dorm.name}
+            </h2>
             <div className="space-y-3">
               <p className="flex items-center text-gray-700">
                 <MapPin className="w-4 h-4 mr-2" />
-                <a 
+                <a
                   href={dorm.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -167,15 +198,21 @@ export default function page() {
                   <ExternalLink className="w-3 h-3 ml-1" />
                 </a>
               </p>
-              <p className={`flex items-center font-semibold ${
-                  dorm.priceRange === '$$$' ? 'text-red-600' : dorm.priceRange === '$$' ? 'text-yellow-600' : 'text-green-600'
-                }`}>
+              <p
+                className={`flex items-center font-semibold ${
+                  dorm.priceRange === "$$$"
+                    ? "text-red-600"
+                    : dorm.priceRange === "$$"
+                    ? "text-yellow-600"
+                    : "text-green-600"
+                }`}
+              >
                 <Banknote className="w-4 h-4 mr-2" />
                 {dorm.priceRange}
               </p>
               <p className="flex items-center text-blue-600">
                 <Home className="w-4 h-4 mr-2" />
-                <a 
+                <a
                   href={dorm.officialPageUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -209,5 +246,5 @@ export default function page() {
         ))}
       </div>
     </div>
-  )
+  );
 }
