@@ -10,7 +10,7 @@
 ## Preview
 
 <p align="center">
-    <img src="https://github.com/atasoya/emu-guide/blob/main/src/app/opengraph-image.png" alt="Banner" width="250" height="500" />
+    <img src="https://github.com/atasoya/emu-guide/blob/main/src/app/opengraph-image.png" alt="Banner" />
 </p>
 
 [Emu Guide](https://www.emu.guide/) is your go-to platform for all things related to Eastern Mediterranean University (EMU). Whether you're a prospective student, current attendee, or alumni, Emu Guide provides comprehensive information about academic programs, campus life, and student services. Explore detailed guides, connect with the EMU community, and stay updated on the latest university news and events. Join us in discovering the opportunities and experiences that EMU has to offer!
