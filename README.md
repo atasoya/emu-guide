@@ -7,8 +7,6 @@
 
 # Emu Guide
 
-## Preview
-
 <p align="center">
     <img src="https://github.com/atasoya/emu-guide/blob/main/src/app/opengraph-image.png" alt="Banner" />
 </p>
