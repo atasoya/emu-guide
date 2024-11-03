@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, Globe } from "lucide-react";
+import FeaturedAnnouncement from "@/components/FeaturedAnnouncement";
 
 // Utility function to replace Turkish characters with English equivalents
 const replaceTurkishChars = (text: string) => {
@@ -109,22 +110,14 @@ export default function Component() {
         </div>
       </header>
 
-      {/* Featured Announcement 
-      <section className="bg-yellow-100 text-yellow-900 py-2">
-        <div className="container mx-auto text-center">
-          <a
-            href="https://www.instagram.com/dauhub"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-bold text-sm hover:underline md:text-lg"
-          >
-            {language === 'en'
-              ? 'Check out DauHub: the top Instagram humor page at EMU'
-              : 'DauHub\'ı keşfedin: Daü\'deki en iyi Instagram mizah sayfası '}
-          </a>
-        </div>
-      </section>
-      */}
+      {/* Featured Announcement */}
+      <FeaturedAnnouncement
+        show={true}
+        language={language}
+        link="https://www.instagram.com/dauhub"
+        announcementEN="Check out DauHub: the top Instagram humor page at EMU"
+        announcementTR="DauHub'ı keşfedin: Daü'deki en iyi Instagram mizah sayfası"
+      />
 
       {/* Main Content */}
       <main className="flex-1">
