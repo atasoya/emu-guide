@@ -112,7 +112,7 @@ export default function Component() {
 
       {/* Featured Announcement */}
       <FeaturedAnnouncement
-        show={true}
+        show={false}
         language={language}
         link="https://www.instagram.com/dauhub"
         announcementEN="<p>Check out <strong>DauHub</strong>: the top Instagram humor page at EMU</p>"
