@@ -71,3 +71,34 @@ Your contributions will help make Emu Guide a better resource for the EMU commun
    ```bash
    npm run dev
    ```
+
+## Environment Setup
+
+### Setting Up Environment Keys
+
+1. Create a new `.env.local` file in the root directory:
+
+   ```bash
+   cp example.env.local .env.local
+   ```
+
+2. Update the `.env.local` file with your MongoDB connection string:
+
+   - Replace `username` with your MongoDB username
+   - Replace `password` with your MongoDB password
+   - Replace `localhost:27017` with your MongoDB host and port
+   - Replace `database_name` with your database name
+
+   Example for local development:
+
+   ```
+   MONGODB_URL=mongodb://localhost:27017/your_database
+   ```
+
+   Example for MongoDB Atlas:
+
+   ```
+   MONGODB_URL=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/your_database
+   ```
+
+3. Make sure to never commit your `.env.local` file to version control. It's already included in `.gitignore`.
